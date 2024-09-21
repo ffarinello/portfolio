@@ -1,0 +1,35 @@
+body {
+  background-image: linear-gradient(90deg, #49454f 65%, #20214a 100%);
+}
+
+header {
+  section.resume{
+    
+  }
+
+  .polygon {
+    max-height: 153px;
+  }
+  .circle {
+    max-height: 132px;
+  }
+  .rectangle {
+    max-height: 153px;
+  }
+
+  .info-desc {
+    color: white;
+  }
+
+  .profesion {
+    color: #ff6f61;
+  }
+
+  .blue {
+    color: #7fbbe0;
+  }
+
+  .gold {
+    color: #ffdd57;
+  }
+}
