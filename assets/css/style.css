@@ -4,17 +4,30 @@ body {
 
 header {
   section.resume{
-    
+    margin: 96px 0 0 240px;
+    position: relative;
+  }
+
+  .polygon, .rectangle, .circle{
+    position: absolute;
+    z-index: -1;    
   }
 
   .polygon {
-    max-height: 153px;
+    max-height: 148px;
+    left: 126px;
+    top: 84px;
+    border-radius: 12px;
   }
   .circle {
     max-height: 132px;
+    top: 101px;
   }
-  .rectangle {
+  .rectangle{
     max-height: 153px;
+    top: 25px;
+    left: 7px;
+    border-radius: 12px;
   }
 
   .info-desc {
@@ -31,5 +44,19 @@ header {
 
   .gold {
     color: #ffdd57;
+  }
+
+  h1{
+    position: absolute;
+    font-size: 4rem;
+    top: -25px;
+    left: 20px
+  }
+
+  h2{
+    font-size: 4rem;
+    position: absolute;
+    top: 75px;
+    left: 15px;
   }
 }
