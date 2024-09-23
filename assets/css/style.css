@@ -1,16 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-image: linear-gradient(90deg, #49454f 65%, #20214a 100%);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 header {
-  section.resume{
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 56px 0;
+  }
+
+  section.menu > ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li:not(:first-child){
+   padding-left: 18px;
+  }
+
+  .theme-light {
+   display: none; 
+   /* esto no oculta gap, padding o margin */
+   /* probar uso de :has() */
+  }
+
+  img.dropdown {
+    transform: rotate(-90deg);
+  }
+
+  section.resume {
     margin: 96px 0 0 240px;
     position: relative;
   }
 
-  .polygon, .rectangle, .circle{
+  .polygon,
+  .rectangle,
+  .circle {
     position: absolute;
-    z-index: -1;    
+    z-index: -1;
   }
 
   .polygon {
@@ -23,7 +57,7 @@ header {
     max-height: 132px;
     top: 101px;
   }
-  .rectangle{
+  .rectangle {
     max-height: 153px;
     top: 25px;
     left: 7px;
@@ -46,14 +80,14 @@ header {
     color: #ffdd57;
   }
 
-  h1{
+  h1 {
     position: absolute;
     font-size: 4rem;
     top: -25px;
-    left: 20px
+    left: 20px;
   }
 
-  h2{
+  h2 {
     font-size: 4rem;
     position: absolute;
     top: 75px;
